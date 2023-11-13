@@ -1,5 +1,5 @@
 #page{
-    height: 3000px;
+    height: 7000px;
     width: 100%;
     background-color: black;
 }
@@ -62,7 +62,6 @@ select option{
 #text{
     height: 700px;
     width:100%;
-    /* border:1px solid white; */
     position: absolute;
     color:white;
     font-family:Arial, Helvetica, sans-serif;
@@ -118,9 +117,163 @@ input::placeholder{
    padding-right: 50px;
    padding-left: 50px;
    border-radius: 5px;
+}
+#hr1{
+    position: absolute;
+    width: 99%;
+    height: 12px;
+    background-color:rgba(255,255,255,0.2);
+    top:810px;
+    border-color: transparent;
+}
+#card1{
+    height: 650px;
+    width: 99%;
+    position: absolute;
+    top: 830px;
+}
+#card1 img{
+    float: right;
+    margin-top:110px;
+    margin-right: 100px;
+}
+#card1 p{
+    color:white;
+    float: left;
+    margin-left: 250px;
+    margin-top: 150px;
+}
+#card1 p span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#card1 p #l1{
+   font-size: 60px;
+   font-weight:bolder;
+   line-height: 2;
+}
+#card1 p #l2,#l3,#l4
+{
+    line-height: 1.5;
+    font-size: 30px;
+   font-weight:lighter; 
+}
+#hr2{
+   
+    position: absolute;
+    width: 99%;
+    height: 12px;
+    background-color:rgba(255,255,255,0.2);
+    top:1450px;
+    border-color: transparent;
+}
+#card2{
+    height: 650px;
+    width: 99%;
+    position: absolute;
+    top: 1470px;
+}
+#card2 img{
+    margin-left: 300px;
+    margin-top: 100px;
+}
+#card2 p{
+    color: white;
+    float: right;
+    margin-top: 150px;
+    margin-right:250px ;
+    line-height: 2;
+} 
+ #card2 p #l11,#l12,#l13 {
+    font-size: 65px;
+    font-weight:bolder;
+    line-height: 1;
+ }
+ #card2 p #l14,#l15{
+    line-height: 1.5;
+    font-size: 30px;
+   font-weight:lighter;   
+ } 
+#hr3{
+    position: absolute;
+    width: 99%;
+    height: 12px;
+    background-color:rgba(255,255,255,0.2);
+    top:2100px;
+    border-color: transparent;
+}
+#card3
+{
+    height: 650px;
+    width: 99%;
+    position: absolute;
+    top: 2120px;
+}
+#card3 img{
+    margin-right: 150px;
+    margin-top: 75px;
+}
+#card3 p{
+    color: white;
+    margin-left: 300px;
+    margin-top: 200px;
+}
+#card3 p #l21{
+    font-size: 65px;
+    font-weight:bolder;
+    line-height: 2;
 
 }
+#card3 p #l22,#l23{
+    line-height: 1.5;
+    font-size: 30px;
+   font-weight:lighter;
 
-
+}
+#hr4{
+    position: absolute;
+    width: 99%;
+    height: 12px;
+    background-color:rgba(255,255,255,0.2);
+    top:2750px;
+    border-color: transparent;
+}
+#card4
+{
+    height: 650px;
+    width: 99%;
+    position: absolute;
+    top: 2770px;
+}
+#card4 img{
+    margin-left: 270px;
+    margin-top: 75px;
+}
+#card4 p{
+    color:white;
+    margin-top: 150px;
+    float: right;
+    margin-right: 300px;
+    line-height: 2;
+}
+#card4 #l31,#l32
+{
+    font-size: 65px;
+    font-weight:bolder;
+    line-height: 1;
+}
+#card4 #l33,#l34,#l35
+{
+    line-height: 1.5;
+    font-size: 30px;
+   font-weight:lighter;
+}
+#hr5{
+    position: absolute;
+    width: 99%;
+    height: 12px;
+    background-color:rgba(255,255,255,0.2);
+    top:3410px;
+    border-color: transparent;
+}
 
 
