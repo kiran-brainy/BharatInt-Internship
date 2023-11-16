@@ -19,16 +19,17 @@
     /* border: 5px white solid; */
     position:absolute;
     background-color:black;
-    z-index:1;
+    z-index:4;
     opacity:0.8 ;
     filter:brightness(100%);
     filter: contrast(100%);
 }
-#logosec img{
-    filter:brightness(120%);
-    filter: contrast(100%);
-    filter: saturate(1000%);
+#logosec #img{
+    filter:brightness(400%);
+    filter: contrast(400%);
+    filter: saturate(400%);
     margin-left: 300px;
+    z-index: 5;
 }
 #signin{
     background-color: rgba(255, 0,0,0.8);
@@ -67,6 +68,7 @@ select option{
     font-family:Arial, Helvetica, sans-serif;
     font-weight:bolder;
     text-align: center;
+    filter: brightness(100%);
 }
 #text #pri{
     text-align: center;
@@ -106,6 +108,7 @@ input::placeholder{
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     color: white;
+    text-indent: 10px;
 }
 #top #mail #bt1{
     padding-top: 20px;
@@ -275,5 +278,52 @@ input::placeholder{
     top:3410px;
     border-color: transparent;
 }
+#faq{
+    position: absolute;
+    top:3430px;
+    border:1px solid white;
+    height:auto;
+    width:100%;
+}
+#faq p{
+    color:white;
+    font-size: 60px;
+   font-weight:bolder;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.dd1,#dd2,#dd3,#dd4,#dd5,#dd6{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+    height:auto;
+    width: 70%;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 27, 27);
+}
+#ques .dd1 p,#ques #dd2 p,#ques #dd3 p,#ques #dd4 p,#ques #dd5 p,#ques #dd6 p{
+    text-align: left;
+    font-size:26.5px;
+    line-height:1.5;
+    margin-top: 1px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 30px;
+    width: auto;
+}
+.cd1,#cd2,#cd3,#cd4,#cd5,#cd6 {
+    overflow: hidden;
+    transition: all 0.3 ease;
+    display: none;
+}
+.dd1:active,#dd5:active,#dd4:active,#dd3:active,#dd2:active,#dd6:active,
+.dd1:hover,#dd5:hover,#dd4:hover,#dd3:hover,#dd2:hover,#dd6:hover {
+    background-color:rgb(39,39,39);
+  }
+
+
 
 
