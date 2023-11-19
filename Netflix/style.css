@@ -1,5 +1,5 @@
 #page{
-    height: 7000px;
+    height: 5100px;
     width: 100%;
     background-color: black;
 }
@@ -21,18 +21,18 @@
     background-color:black;
     z-index:4;
     opacity:0.8 ;
-    filter:brightness(100%);
-    filter: contrast(100%);
+    filter:brightness(200%);
+    
 }
 #logosec #img{
-    filter:brightness(400%);
+    filter:brightness(300%);
     filter: contrast(400%);
     filter: saturate(400%);
     margin-left: 300px;
     z-index: 5;
 }
 #signin{
-    background-color: rgba(255, 0,0,0.8);
+    background-color: rgba(255, 0,0);
     color: white;
     padding: 15px;
     font-size:20px;
@@ -281,9 +281,9 @@ input::placeholder{
 #faq{
     position: absolute;
     top:3430px;
-    border:1px solid white;
     height:auto;
     width:100%;
+    text-align: center;
 }
 #faq p{
     color:white;
@@ -291,39 +291,137 @@ input::placeholder{
    font-weight:bolder;
    text-align: center;
    font-family: Arial, Helvetica, sans-serif;
+   font-weight: 900;
 }
-.dd1,#dd2,#dd3,#dd4,#dd5,#dd6{
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: auto;
-    height:auto;
-    width: 70%;
-    margin-top: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+#back{
+    filter: brightness(100%);
+}
+
+#faq .collapsible {
     background-color: rgb(27, 27, 27);
-}
-#ques .dd1 p,#ques #dd2 p,#ques #dd3 p,#ques #dd4 p,#ques #dd5 p,#ques #dd6 p{
-    text-align: left;
-    font-size:26.5px;
-    line-height:1.5;
-    margin-top: 1px;
-    position: relative;
-    display: block;
+    color: white;
     cursor: pointer;
-    border-radius: 4px;
+    padding: 18px;
+    width: 70%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 26px;
+    height: auto;
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
-    width: auto;
-}
-.cd1,#cd2,#cd3,#cd4,#cd5,#cd6 {
-    overflow: hidden;
-    transition: all 0.3 ease;
-    display: none;
-}
-.dd1:active,#dd5:active,#dd4:active,#dd3:active,#dd2:active,#dd6:active,
-.dd1:hover,#dd5:hover,#dd4:hover,#dd3:hover,#dd2:hover,#dd6:hover {
-    background-color:rgb(39,39,39);
+    
   }
+  
+ #faq .collapsible:hover {
+    background-color: rgb(53, 52, 52);
+  }
+  
+ #faq .content {
+    height: auto;
+    width: 70%;
+    font-size: 25px;
+    text-align: left;
+    display: none;
+    overflow: hidden;
+    background-color: rgb(27, 27, 27);
+    margin: auto;
+    margin-top: 2px;
+    
+}
+#faq .content p{
+    font-size: 28px;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 17px;
+}
 
+#faq .reg p{
+    color: white;
+    font-size: 26px;
+    font-weight: normal;
+}
+#faq .reg #m2{
+padding-right:250px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ text-align:left;
+ background-color: transparent;
+ border-radius: 5px;
+ border: 2px solid white;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size: medium;
+ color:white ;
+ border:0.5px rgb(53, 52, 52) solid ;
+}
+#faq .reg #bt2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:red;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+#faq .reg #m2::placeholder{
+    color:rgb(90, 88, 88); 
+    font-family: Arial, Helvetica, sans-serif;
+}
+#top #mail #bt1::placeholder{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#hr6{
+    position: absolute;
+    width: 99%;
+    height: 12px;
+    background-color:rgba(255,255,255,0.2);
+    top:4490px;
+    border-color: transparent;
+}
+ #footer{
+    height: 600px;
+    width: 99%;
+    position: absolute;
+    top:4510px ;
+    color: white;
+    display: flex;
+    flex-direction: row;
 
-
-
+}
+#footer ul li{
+    line-height: 3;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    list-style: none;
+    font-weight: normal;
+    color:rgba(241, 236, 236, 0.678);   
+}
+#footer ul {
+    color:rgba(241, 236, 236, 0.678); 
+    margin-left: 100px;
+    margin-top: 100px;
+    float: left;
+}
+#footer ul li select{
+    padding: 5px;
+    background-color: transparent;
+    color:rgba(241, 236, 236, 0.678);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:20px;
+    border-radius:7.5px;
+    border: 0.5px white solid;
+    border-width: 0.05px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.col-1,.col-2,.col-3,.col-4{
+    height: 591px;
+    width: 25%;
+    margin-left: 5px;
+}
