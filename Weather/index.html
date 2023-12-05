@@ -43,8 +43,8 @@
             console.log(data);
             document.querySelector("#city").innerHTML=data.name;
             document.querySelector("#temp").innerHTML=Math.round(data.main.temp)+ "*C";
-            document.querySelector("#speed").innerHTML=data.wind.speed +"%";
-            document.querySelector("#hum").innerHTML=data.main.humidity+"kmph";      
+            document.querySelector("#speed").innerHTML=data.wind.speed +"kmph";
+            document.querySelector("#hum").innerHTML=data.main.humidity+"%";      
         } 
         function extract()
         {
