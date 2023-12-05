@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="external.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <div id="top"></div>
+        <h1 style="text-align: center;color:black;font-size:30px;">𝕂-𝔽𝕠𝕣𝕖𝕔𝕒𝕤𝕥</h1>
+       </div>
+       <div class="middle">
+        <form>
+        <span>Enter Your City:</span><br>
+        <input type="text" placeholder="City" name="location" id="loc"><br>
+        <div class="button">
+        <button id="b1" type="button" onclick="extract()">Submit</button>
+        <input type="reset" value="Reset" id="b2" onclick="reset()"></form>     
+        </div>  
+        <span>
+            Weather Info:<br>
+        </span>
+          <div id="display">
+          <ul>
+            <li>City Name:<span id="city">NA</span></li>
+            <li>Temperature:<span id="temp">NA</span></li>
+            <li>Wind Speed:<span id="speed">NA</span></li>
+            <li>Humidity:<span id="hum">NA</span></li>
+          </ul>
+           </div>
+       </div>
+       <script>
+        var y;
+        const apiKey="d61e95d7867ad0ee8890a1377f5a9138";
+        const apiUrl="https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+        const box=document.getElementById("loc");
+        const searchbtn=document.getElementById("b1");
+        async function checkweather(city)
+            {
+            const response=await fetch(apiUrl + city + `&appid=${apiKey}`);
+            var data=await response.json();
+            console.log(data);
+            document.querySelector("#city").innerHTML=data.name;
+            document.querySelector("#temp").innerHTML=Math.round(data.main.temp)+ "*C";
+            document.querySelector("#speed").innerHTML=data.wind.speed +"%";
+            document.querySelector("#hum").innerHTML=data.main.humidity+"kmph";      
+        } 
+        function extract()
+        {
+             y=document.getElementById("loc").value;
+             checkweather(y)
+        }
+         function reset()
+         {
+             document.reload()
+         }
+       
+            console.log(box.value)
+           
+       </script>
+    </body>
+</html>
